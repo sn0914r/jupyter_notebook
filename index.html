@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupyter Notebook Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notebook-container">
+        <!-- Top Menu Bar -->
+        <div class="menu-bar">
+            <div class="menu-left">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMTVMMTUgOEw4IDFMMSA4TDggMTVaIiBmaWxsPSIjRkY2QzAwIi8+Cjwvc3ZnPg==" alt="Jupyter" class="jupyter-icon">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Run</span>
+                <span class="menu-item">Kernel</span>
+                <span class="menu-item">Tabs</span>
+                <span class="menu-item">Settings</span>
+                <span class="menu-item">Help</span>
+            </div>
+        </div>
+
+        <!-- Tab Bar -->
+        <div class="tab-bar">
+            <div class="tab active">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMTVMMTUgOEw4IDFMMSA4TDggMTVaIiBmaWxsPSIjRkY2QzAwIi8+Cjwvc3ZnPg==" alt="notebook" class="tab-icon">
+                <span class="tab-title">Untitled4.ipynb</span>
+                <span class="tab-close">×</span>
+            </div>
+            <div class="tab-add">+</div>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <button class="toolbar-btn" title="Save">💾</button>
+                <button class="toolbar-btn" title="Add Cell">+</button>
+                <button class="toolbar-btn" title="Cut">✂️</button>
+                <button class="toolbar-btn" title="Copy">📋</button>
+                <button class="toolbar-btn" title="Paste">📄</button>
+                <button class="toolbar-btn" title="Run">▶️</button>
+                <button class="toolbar-btn" title="Stop">⏹️</button>
+                <button class="toolbar-btn" title="Restart">🔄</button>
+                <button class="toolbar-btn" title="Fast Forward">⏩</button>
+                <select class="toolbar-select">
+                    <option>Code</option>
+                    <option>Markdown</option>
+                    <option>Raw</option>
+                </select>
+                <button class="toolbar-btn" title="Command Palette">🎯</button>
+            </div>
+            <div class="toolbar-right">
+                <span class="toolbar-text">Notebook</span>
+                <button class="toolbar-btn">🔗</button>
+                <button class="toolbar-btn">❓</button>
+                <span class="toolbar-text">Python (Pyodide)</span>
+                <div class="radio-group">
+                    <input type="radio" id="python" name="kernel" checked>
+                    <label for="python"></label>
+                </div>
+                <button class="toolbar-btn">📊</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="line-number">1</div>
+                <div class="line-number">2</div>
+            </div>
+            <div class="notebook-area">
+                <div class="cell active-cell">
+                    <div class="cell-input">
+                        <div class="cell-prompt">[ ]:</div>
+                        <div class="cell-editor">
+                            <textarea class="code-input" id="code-output" placeholder="Enter Python code here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Status Bar -->
+        <div class="status-bar">
+            <div class="status-left">
+                <span class="status-text">Simple</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="simple-mode">
+                    <label for="simple-mode"></label>
+                </div>
+                <span class="status-text">3</span>
+                <button class="status-btn">⚪</button>
+                <span class="status-text">Python (Pyodide) | Idle</span>
+            </div>
+            <div class="status-right">
+                <span class="status-text">Mode: Command</span>
+                <button class="status-btn">💾</button>
+                <button class="status-btn">🔄</button>
+                <span class="status-text">Ln 1, Col 1</span>
+                <span class="status-text">Untitled4.ipynb</span>
+                <span class="status-text">4</span>
+                <button class="status-btn">🔽</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="scam.js" type="module"></script>
+</body>
+</html>
