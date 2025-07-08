@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     const element = document.getElementById("code-output");
 
-    available_codes.includes(exp) && (element.value = CODES[`exp-${exp}`])
+    available_codes.includes(exp) && (element.innerHTML = `<pre>${CODES[`exp-${exp}`]}</pre>`)
     
 })
