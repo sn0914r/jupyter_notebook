@@ -92,15 +92,35 @@ def bfs(visited, graph, node):
 print("Breadth First Search: ")
 bfs(visited, graph, '5')
     `,
-    "exp-1": "not updatedd",
-    "exp-2": "not updated",
-    "exp-3": "not updatedd",
-    "exp-4": "not updatedd",
-    "exp-5": "not updatedd",
-    "exp-6": "not updatedd",
-    "exp-7": "not updatedd",
-    "exp-8": "not updatedd",
+  "exp-1": `#a
+import pandas as pd
+a = [1, 3, 5]
+my_series = pd.Series(a, index=["x", "y", "z"])
+print(my_series)
 
+#b
+grades = {
+    "Semester1":3.25,
+    "Semester2":3.28,
+    "Semester3":3.75
+}
+my_series = pd.Series(grades)
+print(my_series)
+
+#c
+data={
+    "calories": [420, 380, 390],
+    "duration": [50, 40, 45]
+}
+myvar = pd.DataFrame(data)
+print(myvar)`,
+  "exp-2": "not updated",
+  "exp-3": "not updatedd",
+  "exp-4": "not updatedd",
+  "exp-5": "not updatedd",
+  "exp-6": "not updatedd",
+  "exp-7": "not updatedd",
+  "exp-8": "not updatedd",
 };
 
 export default CODES;
