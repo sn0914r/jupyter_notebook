@@ -92,6 +92,15 @@ def bfs(visited, graph, node):
 print("Breadth First Search: ")
 bfs(visited, graph, '5')
     `,
+    "exp-1": "not updatedd",
+    "exp-2": "not updated",
+    "exp-3": "not updatedd",
+    "exp-4": "not updatedd",
+    "exp-5": "not updatedd",
+    "exp-6": "not updatedd",
+    "exp-7": "not updatedd",
+    "exp-8": "not updatedd",
+
 };
 
 export default CODES;
